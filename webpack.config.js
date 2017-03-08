@@ -10,13 +10,12 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'index.js',
-    publicPath: '/public'
+    path: path.join(__dirname, 'build'),
+    filename: 'build.js'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(), 
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
   module: {
